@@ -1,0 +1,5 @@
+* thumbfetch
+
+** tiny yt thumbnail fetcher
+
+thumbfetch is a lightweight command-line tool written in Rust that lets you quickly download YouTube video thumbnails using just a URL or video ID. 
