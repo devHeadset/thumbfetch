@@ -12,7 +12,6 @@
         pkgs = import nixpkgs {
           inherit system;
         };
-        rustToolchain = pkgs.rust-bin.stable.latest.default;
       in
       {
         packages.default = pkgs.rustPlatform.buildRustPackage {
@@ -33,9 +32,9 @@
 
         devShells.default = pkgs.mkShell {
           buildInputs = [
-            rustToolchain
             pkgs.pkg-config
             pkgs.openssl
+            pkgs.cargo
           ];
         };
       }
